@@ -10,7 +10,7 @@
 int main(void)
 {
 	int sign = -24900386;
-	unsigned int un = 25936380;
+	int un = 698736380;
 
 	handle_int(sign);
 	_putchar('\n');
