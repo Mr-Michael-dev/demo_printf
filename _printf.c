@@ -3,5 +3,5 @@
 
 int _printf(const char *format, ...)
 {
-	_parser()
+nt i = 0;
 }
