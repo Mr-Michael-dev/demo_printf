@@ -1,6 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 
+/**
+ * handle_int - prints integer to stdout
+ * @arg: integer to be printed
+ *
+ * Return: 0
+ */
 
 int handle_int(int arg)
 {
@@ -22,7 +27,7 @@ int handle_int(int arg)
 		{
 			temp[i++] = '0' + (arg % 10);
 			arg /= 10;
-                }
+		}
 
 		while (i > 0)
 		{

@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * handle_str - prints a string
@@ -10,11 +9,20 @@
 
 int handle_str(char *arg)
 {
-	while (*arg)
+	char *new_str = malloc(strlen(arg) + 1);
+
+	if (new_str == NULL)
 	{
-		_putchar(*arg);
-		arg++;
+		return (-1);
 	}
 
+	strcpy(new_str, arg);
+	while (new_str != NULL)
+	{
+		_putchar(*new_str);
+		new_str++;
+	}
+
+	free(new_str);
 	return (0);
 }
